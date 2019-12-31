@@ -13,10 +13,10 @@
 <div style="display:inline">
 <img src="/data/images/result.jpg" width="240"/>
 </div>  
-## 编译说明  
-### 1. CPP工程编译说明  
-1. 配置cpp目录下的CMakeLists.txt文件中的OpenCV的路径  
 
+## 编译说明  
+### 1.CPP工程编译说明  
+1. 配置cpp目录下的CMakeLists.txt文件中的OpenCV的路径  
 ```
 cmake_minimum_required(VERSION 2.8.12)
 

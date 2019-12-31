@@ -17,13 +17,13 @@
 ### 1. CPP工程编译说明
 1. 配置cpp目录下的CMakeLists.txt文件中的OpenCV的路径  
 
-```Makefile
+```
 cmake_minimum_required(VERSION 2.8.12)
 
 PROJECT(faceAveraging)
 
 #############  基本库配置  ############
-find_package(OpenCV PATHS /Users/zhangxiaomin/Works/libs/opencv-release/cv-412/install/lib/cmake/opencv4/)
+find_package(OpenCV PATHS ~/Works/libs/opencv-release/cv-412/install/lib/cmake/opencv4/)
 # 如果配置了OpenCV的环境变量可以使用下面的语句代替上面的语句
 # find_package(OpenCV REQUIRED)
 
@@ -41,7 +41,7 @@ add_example(faceAveraging)
 ```
 然后进入cpp文件夹，创建build文件夹，进入build文件夹使用cmake进行编译  
 
-```Bash
+```
 # 进入cpp文件夹
 cd cpp
 # 创建build文件夹，并进入build文件夹
@@ -50,15 +50,16 @@ mkdir build && cd build
 cmake ..
 cmake --build . --config Release
 ```
-运行编译之后的文件
-```Bash
+运行编译之后的文件  
+
+```
 # 在cpp文件下执行
 ./build/faceAveraging
 ```
 ### 2. python代码执行
 进入python文件夹创建python虚拟环境，并安装依赖  
 
-```Bash
+```
 # 创建虚拟环境
 virtualenv --no-site-packages venv -p python3
 # 激活虚拟环境
@@ -68,7 +69,7 @@ pip install -r requirements.txt
 ```
 在虚拟环境下执行faceAveraging.py脚本  
 
-```Bash
+```
 python faceAveraging.py
 ```
 ## 工程结构说明  
